@@ -11,31 +11,30 @@
 		<link href="css/FileAComplaint.css" rel="stylesheet">
     </head>
     <body>
-        <div class="type" class="complaintType">
-		<h2>Complaint Type</h2>
-		<form action="fileComplaint.php" method="GET">
+      <div class="type" class="complaintType">
+		 <!-- <h2>Complaint Type</h2>-->
+		 <form action="FileAComplaint.php" method="GET">
 			<fieldset>
-				<!--<legend id="title5" class="desc">Type of complaint</legend> -->
+				<legend id="title5" class="desc">Type of complaint</legend> <br><br><br>
 				<div>
-				<input id="radioDefault_5" name="Field5" type="hidden" value="">
 				<div>
-					<input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="1">
+					<input id="Field5_0" name="murder" type="radio" value="First Choice" tabindex="1">
 					<label class="choice" for="Field5_0">Murder/Homicide</label>
 				</div>
 				<div>
-					<input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="2">
+					<input id="Field5_1" name="domestic" type="radio" value="Second Choice" tabindex="2">
 					<label class="choice" for="Field5_1">Domestic Violence</label>
 				</div>
 				<div>
-					<input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="3">
+					<input id="Field5_2" name="sexual" type="radio" value="Third Choice" tabindex="3">
 					<label class="choice" for="Field5_2">Sexual Harassment</label>
 				</div>
 				<div>
-					<input id="Field5_3" name="Field5" type="radio" value="Fourth Choice" tabindex="4">
+					<input id="Field5_3" name="assault" type="radio" value="Fourth Choice" tabindex="4">
 					<label class="choice" for="Field5_3">Assault/Violence</label>
 				</div>
 				<div>
-					<input id="Field5_4" name="Field5" type="radio" value="Fifth Choice" tabindex="5">
+					<input id="Field5_4" name="theft" type="radio" value="Fifth Choice" tabindex="5">
 					<label class="choice" for="Field5_4">Theft/Robbery</label>
 				</div>
 				</div>
@@ -43,64 +42,54 @@
 			<div>
 				<label class="desc" id="title4" for="Field4">Any other? Please Specify!</label>
 				<div>
-					<textarea id="Field4" name="Field4" spellcheck="true" rows="3" cols="40" tabindex="6"></textarea>
+					<textarea id="Field4" name="other" spellcheck="true" rows="2" cols="30" tabindex="6"></textarea>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div>
+			<fieldset>
+				<legend id="title6" class="desc">Assistance Required</legend>
+				<br><br><br>
+				<div>
+					<input id="Field6" name="medical" type="checkbox" value="First Choice" tabindex="8">
+					<label class="choice" for="Field6">Medical</label>
+				</div>
+				<div>
+					<input id="Field7" name="police" type="checkbox" value="Second Choice" tabindex="9">
+					<label class="choice" for="Field7">Police</label>
+				</div>
+				<div>
+					<input id="Field8" name="counselling" type="checkbox" value="Third Choice" tabindex="10">
+					<label class="choice" for="Field8">Counselling</label>
+				</div>
+			</fieldset>
+			</div>
+			<br><br><br>
+			<div>
+				<legend id="title6" class="desc">Event Details</legend>
+				<label class="desc" id="title4" for="Field4">.....</label>
+				<div>
+					<textarea id="Field4" name="details" spellcheck="true" rows="8" cols="70" tabindex="7"></textarea>
+				</div>	
+			</div>
+			<div>
+				<label class="desc" id="title1" for="Field1">Full Name</label>
+				<div>
+					<input id="Field1" name="name" type="text" class="field text fn" value="" size="8" tabindex="9">
+				</div>
+			</div>
+		
+			<div>
+				<label class="desc" id="title3" for="Field3">Email</label>
+				<div>
+					<input id="Field3" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="10"> 
 				</div>
 			</div>
 		</form> 
         </div>
-		
-		<br>
-		
-		<div>
-			<h2>Describe The Event Details!</h2>
-			<form action="fileComplaint.php" method="GET">
-				<label class="desc" id="title4" for="Field4">.....</label>
-				<div>
-					<textarea id="Field4" name="Field4" spellcheck="true" rows="8" cols="70" tabindex="7"></textarea>
-				</div>
-			</form>
-		</div>
-		
-		<br>
-
-		
-		<div class="informer_details">
-		<form action="fileComplaint.php" method="GET">
-		<div>
-			<fieldset>
-				<legend id="title5" class="desc">Post As Anonymous?</legend>
-				<div>
-				<select id="Field106" name="Field106" class="field select medium" tabindex="8"> 
-					<option value="First Choice">No</option>
-					<option value="Second Choice">Yes</option>
-				</select>
-				</div>
-			</fieldset>
-		</div>
-		<div>
-			<label class="desc" id="title1" for="Field1">Full Name</label>
-			<div>
-				<input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="9">
-			</div>
-		</div>
-		
-		<div>
-			<label class="desc" id="title3" for="Field3">Email</label>
-			<div>
-				<input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="10"> 
-			</div>
-		</div>
-		</form>
-		</div>
-				
-		<br>				
-				
-		<div class="evidence">
-			<h2>Any evidence? Picture or Video!</h2>
-		</div>
-		
+		<br><br>
 		<div class="submitComplaint">
-		<button></button>
+		<button>Submit Complaint</button>
 		</div>
     </body>
 </html>
