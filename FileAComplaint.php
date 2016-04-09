@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 		require 'connect.inc.php';
-	//  require 'complaintSqlFunctions.php';
-	 //  require_once 'FileAComplaint.html';
+		require 'complaintSqlFunctions.php';
+		require_once 'FileAComplaint.html';
 
 ?>
 <html>
@@ -18,7 +18,7 @@
     </head>
     <body>
 		<?php
-				require 'FileAComplaint.html';
+	//			require 'FileAComplaint.html';
 		?>
 		<div class="evidence">
 			<h2>Any evidence? Upload a picture</h2>

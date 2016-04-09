@@ -1,5 +1,5 @@
 <?php
-	   require 'FileAComplaint.html';
+	//   require 'FileAComplaint.html';
 	   		require 'connect.inc.php';
 	//function to get values entered by user when button is pressed
 	$type;
@@ -12,25 +12,28 @@
 	
 	function getData()
 		{
-			if(murder selected)
-			{$type='murder';}
-			else if(domestic violence selected)
-			{$type='domestic violence';}
-			else if(sexual harrasment selected)
-			{$type='sexual harrasment';}
-			else if(assault selected)
-			{$type='assault';}
-			else if(theft selected)
-			{$type='theft'}
+			if(!empty($_GET['type']))
+			{
+				if($_GET['type']=='murder')
+				{$type='murder';}
+				else if($_GET['type']=='domestic')
+				{$type='domestic violence';}
+				else if($_GET['type']=='sexual')
+				{$type='sexual harrasment';}
+				else if($_GET['type']=='assault')
+				{$type='assault';}
+				else if($_GET['type']=='theft')
+				{$type='theft';}
+			}
 			else{$type=$_GET['other'];}
 			
-			if(medical checked)
+			if(!empty($_GET['medical']))
 				$medical=1;
 				else $medical=0;
-			if(police checked)
+			if(!empty($_GET['police']))
 				$police=1;
 				else $police=0;
-			if(counselling selected)
+			if(!empty($_GET['counselling']))
 				$conselling=1;
 				else $counselling=0;
 				
