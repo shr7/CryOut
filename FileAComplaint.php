@@ -1,3 +1,12 @@
+<?php
+
+//if(isset($_POST['type']))
+error_reporting(0);
+//print_r($_POST);
+// die;
+//}
+
+?>
 <!DOCTYPE html>
 <?php
 		require 'connect.inc.php';
@@ -17,9 +26,10 @@
 		<link href="css/FileAComplaint.css" rel="stylesheet">
     </head>
     <body>
+		
 		<?php
-	//			require 'FileAComplaint.html';
-		?>
+			submit();
+		?>		
 		<div class="evidence">
 			<h2>Any evidence? Upload a picture</h2>
 			The pictures uploaded will be stored in our database and will help police or other organizations in further investigation of the case.
@@ -54,7 +64,7 @@
 
 	      <div class="row">
 	      	<div class="col-lg-12">
-	           <form class="well" action="upload.php" method="post" enctype="multipart/form-data">
+	           <form class="well" action="upload.php" method="POST" enctype="multipart/form-data">
 				  <div class="form-group">
 				    <label for="file">Select a file to upload</label>
 				    <input type="file" name="file">

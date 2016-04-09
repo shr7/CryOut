@@ -1,56 +1,57 @@
 <?php
 	//   require 'FileAComplaint.html';
 	   		require 'connect.inc.php';
-	//function to get values entered by user when button is pressed
-	$type;
-	$medical;
-	$police;
-	$counselling;
-	$details;
-	$name;
-	$email;
+	//function to POST values entered by user when button is pressed
+	 // $type='murder';
+	 // $medical=1;
+	 // $police=1;
+	 // $counselling=0;
+	 // $details='acdaf';
+	 // $name='shreya';
+	 // $email='shreya.chandra96@gmail.com';
+	// $conn=mysql_connect('localhost','root','');
+	 //$dbm=mysql_select_db('cryout',$conn);
 	
-	function getData()
-		{
-			if(!empty($_GET['type']))
+		if(!empty($_POST['type']))
 			{
-				if($_GET['type']=='murder')
+				if($_POST['type']=='murder')
 				{$type='murder';}
-				else if($_GET['type']=='domestic')
+				else if($_POST['type']=='domestic')
 				{$type='domestic violence';}
-				else if($_GET['type']=='sexual')
+				else if($_POST['type']=='sexual')
 				{$type='sexual harrasment';}
-				else if($_GET['type']=='assault')
+				else if($_POST['type']=='assault')
 				{$type='assault';}
-				else if($_GET['type']=='theft')
+				else if($_POST['type']=='theft')
 				{$type='theft';}
 			}
-			else{$type=$_GET['other'];}
+			else{$type=$_POST['other'];}
 			
-			if(!empty($_GET['medical']))
+			if(!empty($_POST['medical']))
 				$medical=1;
 				else $medical=0;
-			if(!empty($_GET['police']))
+			if(!empty($_POST['police']))
 				$police=1;
 				else $police=0;
-			if(!empty($_GET['counselling']))
+			if(!empty($_POST['counselling']))
 				$conselling=1;
 				else $counselling=0;
 				
-			$details=$_GET['details'];
-			$name=$_GET['name'];
-			$email=$_GET['email'];
-		}
+			$details=$_POST['details'];
+			$name=$_POST['name'];
+			$email=$_POST['email'];
+			
 		
-		function addData($type,$medical,$police, $counselling, $details,$name,$email)
-        {
             
-            $sql = "INSERT INTO fileacomplaint(id, type, medical, police, counselling, details, name, email) VALUES ('','$type','$medical','$police','$counselling','$details','$name','$email')";
-            if(mysqli_query($link, $sql)){
-              echo "Complaint received. Will send help as soon as possible";
-            } else{
-                echo "ERROR: Complaint not received $sql. " . mysqli_error($link);
-                }               
-        }
+        	if(isset($_POST['submit'])){
+				$sql = "INSERT INTO fileacomplaint(type, medical, police, counselling, details, name, email) VALUES ('$type','$medical','$police','$counselling','$details','$name','$email')";
+				if(mysqli_query($link, $sql)){
+				  echo "Complaint received. Will send help as soon as possible";
+				} else{
+					echo "ERROR: Complaint not received $sql. " . mysqli_error($link);
+					}               
+				//addData();
+			}
+		//mysql_close($conn);
 	
 ?>

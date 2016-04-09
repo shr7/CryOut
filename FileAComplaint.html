@@ -13,7 +13,7 @@
     <body>
       <div class="type" class="complaintType">
 		 <!-- <h2>Complaint Type</h2>-->
-		 <form action="FileAComplaint.php" method="GET">
+		 <form action="FileAComplaint.php" method="POST">
 			<fieldset>
 				<legend id="title5" class="desc">Type of complaint</legend> <br><br><br>
 				<div>
@@ -85,11 +85,15 @@
 					<input id="Field3" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="10"> 
 				</div>
 			</div>
+			<div class="submitComplaint">
+				<input id='submit' name='submit' type='submit' value='CryOut'></input>
+			</div>
 		</form> 
         </div>
 		<br><br>
-		<div class="submitComplaint">
+	<!--	<div class="submitComplaint">
 		<button>Submit Complaint</button>
 		</div>
+	-->
     </body>
 </html>
