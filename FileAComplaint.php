@@ -23,7 +23,7 @@ error_reporting(0);
         <meta name="keywords" content="Complaint, Help, CryOut">
         <meta name="author" content="Shreya">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/FileAComplaint.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
     </head>
     <body>
 		<!--
@@ -72,7 +72,6 @@ error_reporting(0);
 			</div>
 	      </div>
 		</div>  <!-- /container -->
-		-->
 
 		</div>
 		

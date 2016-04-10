@@ -77,9 +77,9 @@ if(isset($_POST['username'])){
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="inactive"><a href="index.html">Home</a></li>
-                    <li class="inactive"><a href="FileAComplaint.html">File a Complaint</a></li>
-                    <li class="active"><a href="tohelp.html">Help</a></li>
-                    <li class="inactive"><a href="">Forum</a></li>
+                    <li class="inactive"><a href="FileAComplaint.php">File a Complaint</a></li>
+                    <li class="active"><a href="login.php">Help</a></li>
+                    <li class="inactive"><a href="forum.html">Forum</a></li>
                 </ul>
             </div>
             
@@ -92,18 +92,17 @@ if(isset($_POST['username'])){
        <div class="row">
           <div class="col-sm-4 col-sm-offset-2 helpus">
           
-            <a href="tohelp.html">
               <img src="ngo1.png" class="img1">
               <h3 class="text1">NGOs</h3>
-              <p class="text1">yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo</p>
-              </a>
+              <p class="text3">Help the people in need. Log in to get Connected to the people in distress.</p>
+
            </div>
            <div class="col-sm-4 col-sm-offset-1 helpus">
-               <a href="tohelp.html">
+
                <img src="police1.png" class="img1">
                <h3 class="text1">Police</h3>
-              <p class="text1">yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo yo</p>
-               </a>
+              <p class="text3">Fight Crime and mainatin Law and Order. Log in to get Connected to the people in distress.</p>
+
            </div>
        </div>
         </div>
@@ -188,7 +187,7 @@ if(isset($_POST['username'])){
         </div>
     </section>
     
-    <footer>
+    <footer class="footer11">
       <div class="container-fluid">
        <div class="row">
            <div class="col-sm-4 col-sm-offset-4 foot">
