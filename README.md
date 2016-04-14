@@ -15,6 +15,6 @@ A button is available on the app at all times which on being clicked
 Sends an email to the server. We authenticate the request and send it to the policemen or NGOs.
 
 
-Web App Link - https://github.com/shr7/CryOut
+Mobile App Link - https://github.com/sgaggarwal2009/CryOut
 
-Made By- Sagar Aggarwal, Sarthak Agarwal, Shreya Chandra, Shivli Agrawal
+Made By- Shreya Chandra, Sagar Aggarwal, Sarthak Agarwal, Shivli Agrawal
