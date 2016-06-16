@@ -1,6 +1,6 @@
 <?php
 
-require_once 'loginConnect.php';
+require_once 'inc/connect.inc.php';
 
 if(isset($_POST['username'])){
 	$username = trim($_POST['username']);

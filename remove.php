@@ -5,6 +5,6 @@ $filePath = 'uploads/'.$fileName;
 // remove file if it exists
 if ( file_exists($filePath) ) {
 	unlink($filePath);
-	header('Location:FileAComplaint.php');
+	header('Location:complaint.php');
 }
 ?>

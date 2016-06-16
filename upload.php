@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if ($valid) {
 				$targetPath =  dirname( __FILE__ ) . DIRECTORY_SEPARATOR. 'uploads' . DIRECTORY_SEPARATOR. $name;
 				move_uploaded_file($tmpName,$targetPath); 
-				header( 'Location: FileAComplaint.php' ) ;
+				header( 'Location: complaint.php' ) ;
 				exit;
 			}
 			break;
