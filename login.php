@@ -71,7 +71,7 @@ if(isset($_POST['username'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="logofull2.png"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logofull2.png"></a>
             </div>
             
             <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -92,14 +92,14 @@ if(isset($_POST['username'])){
        <div class="row">
           <div class="col-sm-4 col-sm-offset-2 helpus">
           
-              <img src="ngo1.png" class="img1">
+              <img src="img/ngo1.png" class="img1">
               <h3 class="text1">NGOs</h3>
               <p class="text3">Help the people in need. Log in to get Connected to the people in distress.</p>
 
            </div>
            <div class="col-sm-4 col-sm-offset-1 helpus">
 
-               <img src="police1.png" class="img1">
+               <img src="img/police1.png" class="img1">
                <h3 class="text1">Police</h3>
               <p class="text3">Fight Crime and mainatin Law and Order. Log in to get Connected to the people in distress.</p>
 
@@ -107,7 +107,7 @@ if(isset($_POST['username'])){
        </div>
         </div>
         <div class="col-sm-4 login">
-           <img src="logofull1.png" class="logimg">
+           <img src="img/logofull1.png" class="logimg">
            <h3 class="logtext">LOGIN</h3>
             <form method="POST">
                 <div class="input-group">
