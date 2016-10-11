@@ -14,7 +14,10 @@ CryOut has been made with a motive to act as a connecting link between those who
   •	**SOS**
     A button is available on the app at all times which on being clicked sends an email to the server. We authenticate the request and send it to the policemen or NGOs.
 
+![HomePage](/screenshots/homeapage.png)
+
+Made By- Shreya Chandra, Sarthak Agarwal
 
 [Mobile App Link](https://github.com/sgaggarwal2009/CryOut)
+Mobile App By- Sagar Aggarwal, Shivli Agrawal
 
-Made By- Shreya Chandra, Sagar Aggarwal, Sarthak Agarwal, Shivli Agrawal
